@@ -24,6 +24,12 @@ function highestExtension(cs: Colleague[]): Colleague {
   )
 }
 console.log(highestExtension(colleagues.current))
+function addInterest(f: Friend, interest: string): void {
+  if (f.interests) {
+    f.interests.push(interest)
+} else {    f.interests = [interest]
+  }}addInterest(friends[1], "Art")
+console.log(friends[1])
 
 function addColleague(
   cs: Colleague[],
